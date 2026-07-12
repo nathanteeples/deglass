@@ -1,0 +1,38 @@
+{
+  "name": "Liquid Glass",
+  "author": "deglass",
+  "version": "1.0.0",
+  "description": "A calm, Apple-inspired glass interface with native SF Pro typography and Lucide-style icons.",
+  "css": "style.css",
+  "settingsSchema": [
+    {
+      "key": "accent",
+      "label": "Accent color",
+      "description": "Choose the color that catches the light across controls and focus states.",
+      "type": "select",
+      "options": ["blue", "violet", "mint"],
+      "optionLabels": ["Blue", "Violet", "Mint"],
+      "default": "blue"
+    }
+  ],
+  "dataAttrsFromSettings": {
+    "accent": "accent"
+  },
+  "html": {
+    "layout": "layout.html"
+  },
+  "templates": {
+    "search-header": "templates/search-header.html",
+    "search-tabs": "templates/search-tabs.html",
+    "search-media-preview": "templates/media-preview.html",
+    "search-lightbox": "templates/lightbox.html",
+    "result": "templates/result.html",
+    "image-card": "templates/image-card.html",
+    "video-card": "templates/video-card.html",
+    "at-a-glance": "templates/at-a-glance.html",
+    "home-header": "templates/home-header.html",
+    "home-logo": "templates/home-logo.html",
+    "home-search": "templates/home-search.html",
+    "home-footer": "templates/home-footer.html"
+  }
+}
