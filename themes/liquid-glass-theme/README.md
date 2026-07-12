@@ -1,6 +1,6 @@
 # Liquid Glass for degoog
 
-A light, Apple-inspired theme for degoog: native SF Pro system typography, Lucide-style inline icons, rounded translucent surfaces, and a dark mode designed as a deep glass layer rather than an inverted light theme.
+A restrained Apple-inspired skin for degoog: native SF Pro system typography, rounded translucent surfaces, and a dark mode designed as a deep glass layer rather than an inverted light theme. It deliberately retains Degoog's original templates and icons so all controls keep their default behaviour and proportions.
 
 ## Install
 

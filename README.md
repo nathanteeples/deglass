@@ -6,7 +6,7 @@ An extension-store repository for [degoog](https://github.com/degoog-org/degoog)
 
 ### Liquid Glass
 
-An Apple-inspired theme with translucent, layered surfaces, SF Pro system typography, inline Lucide-style icons, responsive layouts, and light/dark modes. It offers blue, violet, and mint accent choices from the theme configuration panel.
+An Apple-inspired theme with restrained translucent surfaces, SF Pro system typography, and light/dark modes. It preserves Degoog's original layouts and icons, with blue, violet, and mint accent choices from the theme configuration panel.
 
 ## Add to degoog
 
