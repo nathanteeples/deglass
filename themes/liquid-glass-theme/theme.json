@@ -1,7 +1,7 @@
 {
   "name": "Liquid Glass",
   "author": "deglass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A restrained Apple-inspired glass skin that keeps Degoog's original layouts and controls intact.",
   "css": "style.css",
   "settingsSchema": [

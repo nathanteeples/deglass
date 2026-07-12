@@ -1,6 +1,6 @@
 {
   "name": "deglass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Apple-inspired liquid glass themes for degoog.",
   "author": "nathanteeples",
   "themes": [
@@ -8,7 +8,7 @@
       "path": "themes/liquid-glass-theme",
       "name": "Liquid Glass",
       "description": "A restrained Apple-inspired glass skin that keeps Degoog's original layouts and controls intact.",
-      "version": "1.0.1"
+      "version": "1.0.2"
     }
   ],
   "plugins": [],

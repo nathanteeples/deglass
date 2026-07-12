@@ -2,6 +2,8 @@
 
 :root,
 [data-theme="light"] {
+  --lg-radius: 16px;
+  --lg-control-radius: 12px;
   --lg-background: #f2f2f7;
   --lg-surface: rgba(255, 255, 255, .62);
   --lg-surface-hover: rgba(255, 255, 255, .82);
@@ -36,7 +38,9 @@
 }
 
 [data-theme="dark"] {
-  --lg-background: #1c1c1e;
+  --lg-radius: 16px;
+  --lg-control-radius: 12px;
+  --lg-background: #262628;
   --lg-surface: rgba(44, 44, 46, .72);
   --lg-surface-hover: rgba(58, 58, 60, .86);
   --lg-line: rgba(255, 255, 255, .15);
@@ -93,11 +97,32 @@ html[data-theme="dark"][data-accent="mint"] {
   --lg-accent-soft: rgba(94, 234, 212, .18);
 }
 
-/* Use the SF Pro system family without changing Degoog's dimensions. */
-*,
-*::before,
-*::after {
+/* Use SF Pro without replacing Degoog's icon font. */
+body,
+body :not(.fa):not(.fa-solid):not(.fa-regular):not(.fa-brands):not([class^="fa-"]):not([class*=" fa-"]),
+body :not(.fa):not(.fa-solid):not(.fa-regular):not(.fa-brands):not([class^="fa-"]):not([class*=" fa-"])::before,
+body :not(.fa):not(.fa-solid):not(.fa-regular):not(.fa-brands):not([class^="fa-"]):not([class*=" fa-"])::after {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif !important;
+}
+
+.fa,
+.fa-solid,
+.fa-regular,
+[class^="fa-"],
+[class*=" fa-"],
+.fa::before,
+.fa-solid::before,
+.fa-regular::before,
+[class^="fa-"]::before,
+[class*=" fa-"]::before {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+
+.fa-brands,
+.fa-brands::before {
+  font-family: "Font Awesome 6 Brands" !important;
+  font-weight: 400 !important;
 }
 
 body {
@@ -116,7 +141,7 @@ body {
 .store-search-input {
   background: var(--lg-surface) !important;
   border: 1px solid var(--lg-line) !important;
-  border-radius: 18px !important;
+  border-radius: var(--lg-radius) !important;
   box-shadow: var(--lg-shadow) !important;
   backdrop-filter: blur(14px) saturate(120%);
   -webkit-backdrop-filter: blur(14px) saturate(120%);
@@ -147,7 +172,7 @@ body {
 .tools-field-toggle,
 .media-preview-nav,
 .media-preview-close {
-  border-radius: 12px !important;
+  border-radius: var(--lg-control-radius) !important;
 }
 
 .search-btn,
@@ -182,7 +207,7 @@ body {
 .store-card {
   background: var(--lg-surface) !important;
   border: 1px solid var(--lg-line) !important;
-  border-radius: 16px !important;
+  border-radius: var(--lg-radius) !important;
   box-shadow: var(--lg-shadow) !important;
   backdrop-filter: blur(14px) saturate(120%);
   -webkit-backdrop-filter: blur(14px) saturate(120%);
@@ -231,7 +256,7 @@ body {
 .tools-field-menu {
   background: var(--lg-surface-hover) !important;
   border: 1px solid var(--lg-line) !important;
-  border-radius: 14px !important;
+  border-radius: var(--lg-radius) !important;
   box-shadow: var(--lg-shadow) !important;
   backdrop-filter: blur(16px) saturate(120%);
   -webkit-backdrop-filter: blur(16px) saturate(120%);
